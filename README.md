@@ -29,3 +29,18 @@ il faut taper `cd ..` dans le terminal. Cette commande permet d'acceder au dossi
 
 #### 3. retournez dans le dossier personnel
 
+tapez `cd`  dans le terminal, il redirigera automatiquement vers le dossier personnel de l'utilisateur.
+
+#### 4. revenez au dossier précédent (/var)
+
+la commande `cd -`  permet de retourner dans le dossier précédent
+
+#### 5. essayez d’accéder au dossier /root ; que se passe-t-il ?
+
+En essayant d'acceder au dossier /root via `cd /root` la permission est refusée. <br>
+Message : *Permission denied*
+
+#### 6. essayez la commande sudo cd /root ; que se passe-t-il ? Expliquez
+
+la commande `sudo cd /root` éxige un mot de passe. En effet sudo signife l'éxecution d'une commande en tant qu'administrateur. Elle permet à un utilisateur lambda d'executer une commande administrateur. Pour cela, un mot de passe administrateur est requis. Une fois le mot de passe rempli, la commande s'execute
+
