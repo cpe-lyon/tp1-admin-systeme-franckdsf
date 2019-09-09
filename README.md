@@ -44,3 +44,13 @@ Message : *Permission denied*
 
 la commande `sudo cd /root` éxige un mot de passe. En effet sudo signife l'éxecution d'une commande en tant qu'administrateur. Elle permet à un utilisateur lambda d'executer une commande administrateur. Pour cela, un mot de passe administrateur est requis. Une fois le mot de passe rempli, la commande s'execute
 
+#### 7. à partir de votre dossier personnel, créez l’arborescence suivante :
+
+tutoriel : 
+-`mkdir Dossier1` <br>
+-`touch Dossier1/Fichier1` <br>
+-`mkdir Dossier2` <br>
+-`cd Dossier2` <br>
+-`mkdir -p Dossier2.{1,2}` <br>
+-`cd Dossier2.2` <br>
+-`touch Fichier{2,3}` <br>
