@@ -88,8 +88,41 @@ la commande `date` permet d'afficher l'heure tandis que la commande `time` sert 
 `user 0m0,001s` <br>
 `sys 0m0,000s`
 
-il faut donc 0,001s pour que le système exécute la commande `ls`
+il faut donc 0,001s pour que le système exécute la commande `ls`.
 
 #### 2. Dans votre dossier personnel, tapez successivement les commandes ls puis la ; que peut-on en déduire sur les fichiers commençant par un point ?
 
 lorsqu'on exécute `ls` puis `la` on s'aperçoit que des fichiers commençant par des points sont affichés. On en déduit que ce sont des <b>fichiers cachés</b>.
+
+#### 3. Où se situe le programme ls ?
+
+la commande `ls` est située dans le dossier `/usr/bin/ls`.
+
+#### 4. Que fait la commande ll ? (indice : la commande alias peut vous aider)
+
+`ll` permet d'afficher la totalité des informations des fichiers/dossiers (droits, propriétaire, groupe propriétaire, horodatage, nom, taille).
+
+#### 5. Quelle commande permet d’afficher les fichiers contenus dans le dossier /bin ?
+
+la commande `ls bin`
+
+#### 6. Que fait la commande ls .. ?
+
+`ls ..` permet de lister les fichiers et dossiers du dossier parent.
+
+#### 7. Quelle commande donne le chemin complet du dossier courant ?
+
+`pwd`.
+
+#### 8. Que fait la commande echo 'yo' > plop exécutée 2 fois ?
+
+cette commande permet de créer un fichier plop et d'y écrire 'yo'. Cependant cette opération n'est pas répétée.
+
+#### 9. Que fait la commande echo 'yo' >> plop exécutée 2 fois ?
+
+cette commande permet de créer un fichier plop (si pas déjà fait) puis d'y insérer 'yo'. Cette opération est répétée.
+On obtient alors un fichier 'plop' avec écrit:
+yo<br>yo
+
+
+
