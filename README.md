@@ -133,5 +133,5 @@ La commande `file` permet d'identifier le type d'un fichier.
 
 #### 11. Créez un fichier toto qui contient la chaîne Hello Toto ! ; créer ensuite un lien titi vers ce fichier avec la commande ln toto titi. Modifiez à présent le contenu de toto et affichez le contenu de titi : qu’observe-t-on ? Supprimez le fichier toto ; quelle conséquence cela a-t-il sur titi ?
 
-
+après avoir modifié le contenu de toto via `echo 'test' >> toto'` et qu'on utillise `cat titi` on observer que les modifications ont impactées le fichier titi. à la suppression de toto, titi reste intacte.
 
