@@ -84,7 +84,7 @@ la commande `rm -r Dossier2` permet de supprimer les sous-dossiers et fichiers d
 la commande `date` permet d'afficher l'heure tandis que la commande `time` sert à determiner le temps d'execution d'un certaine commande. Exemple: <br>
 
 `time ls` nous renvoi : <br>
-`real 0m0,001s <br>
-user 0m0,001s <br>
-sys 0m0,000s`
+`real 0m0,001s` <br>
+`user 0m0,001s` <br>
+`sys 0m0,000s`
 
