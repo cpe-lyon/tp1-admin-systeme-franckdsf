@@ -113,16 +113,25 @@ la commande `ls bin`
 #### 7. Quelle commande donne le chemin complet du dossier courant ?
 
 `pwd`.
+Le résultat obtenu est : `/home/serveur`.
 
 #### 8. Que fait la commande echo 'yo' > plop exécutée 2 fois ?
 
 cette commande permet de créer un fichier plop et d'y écrire 'yo'. Cependant cette opération n'est pas répétée.
+On obtient alors un fichier 'plop' avec écrit:
+<br>yo
 
 #### 9. Que fait la commande echo 'yo' >> plop exécutée 2 fois ?
 
 cette commande permet de créer un fichier plop (si pas déjà fait) puis d'y insérer 'yo'. Cette opération est répétée.
 On obtient alors un fichier 'plop' avec écrit:
-yo<br>yo
+<br>yo<br>yo
+
+#### 10. A quoi sert la commande file ? Essayez la sur des fichiers de types différents.
+
+La commande `file` permet d'identifier le type d'un fichier.
+
+#### 11. Créez un fichier toto qui contient la chaîne Hello Toto ! ; créer ensuite un lien titi vers ce fichier avec la commande ln toto titi. Modifiez à présent le contenu de toto et affichez le contenu de titi : qu’observe-t-on ? Supprimez le fichier toto ; quelle conséquence cela a-t-il sur titi ?
 
 
 
