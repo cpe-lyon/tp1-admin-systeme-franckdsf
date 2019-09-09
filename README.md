@@ -88,3 +88,8 @@ la commande `date` permet d'afficher l'heure tandis que la commande `time` sert 
 `user 0m0,001s` <br>
 `sys 0m0,000s`
 
+il faut donc 0,001s pour que le système exécute la commande `ls`
+
+#### 2. Dans votre dossier personnel, tapez successivement les commandes ls puis la ; que peut-on en déduire sur les fichiers commençant par un point ?
+
+lorsqu'on exécute `ls` puis `la` on s'apperçoit que des fichiers commençant par des points sont affichés. On en déduit que ce sont des <b>fichiers cachés</b>
