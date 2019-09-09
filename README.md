@@ -137,3 +137,4 @@ après avoir modifié le contenu de toto via `echo 'test' >> toto'` et qu'on uti
 
 #### 12. Créez à présent un lien symbolique tutu sur titi avec la commande ln -s titi tutu. Modifiez le contenu de titi ; quelle conséquence pour tutu ? Et inversement ? Supprimez le fichier titi ; quelle conséquence cela a-t-il sur tutu ?
 
+La modification de titi impacte tutu et inversement. 
