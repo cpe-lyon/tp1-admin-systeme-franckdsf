@@ -17,6 +17,11 @@ il suffit d'appuyer sur la touche `q`.
 
 la commande `man 6 intro` permet d'afficher la première page de la section 6 du manuel. Cette section traite des jeux et des programmes disponibles sur le système.
 
+```
+    DESCRIPTION
+       Section 6 of the manual describes the games and funny little programs available on the system.
+```
+
 ## Navigation dans l’arborescence des fichiers
 
 #### 1. allez dans le dossier /var/log
@@ -117,24 +122,39 @@ Le résultat obtenu est : `/home/serveur`.
 
 #### 8. Que fait la commande echo 'yo' > plop exécutée 2 fois ?
 
-cette commande permet de créer un fichier plop et d'y écrire 'yo'. Cependant cette opération n'est pas répétée.
-On obtient alors un fichier 'plop' avec écrit:
+cette commande permet de créer un fichier plop et d'y écrire 'yo'. Le contenu du fichier est alors supprimé.
+On obtient un fichier 'plop' avec écrit:
 <br>yo
 
 #### 9. Que fait la commande echo 'yo' >> plop exécutée 2 fois ?
 
-cette commande permet de créer un fichier plop (si pas déjà fait) puis d'y insérer 'yo'. Cette opération est répétée.
+cette commande permet de créer un fichier plop (si pas déjà fait) puis d'y insérer 'yo'.
 On obtient alors un fichier 'plop' avec écrit:
 <br>yo<br>yo
 
 #### 10. A quoi sert la commande file ? Essayez la sur des fichiers de types différents.
 
-La commande `file` permet d'identifier le type d'un fichier.
+La commande `file` permet d'identifier le type d'un fichier, ou s'il s'agit d'un dossier.
 
 #### 11. Créez un fichier toto qui contient la chaîne Hello Toto ! ; créer ensuite un lien titi vers ce fichier avec la commande ln toto titi. Modifiez à présent le contenu de toto et affichez le contenu de titi : qu’observe-t-on ? Supprimez le fichier toto ; quelle conséquence cela a-t-il sur titi ?
 
-après avoir modifié le contenu de toto via `echo 'test' >> toto'` et qu'on utillise `cat titi` on observe que les modifications ont impactées le fichier titi. A la suppression de toto, titi reste intacte.
+après avoir modifié le contenu de toto via `echo 'test' >> toto'` et qu'on utillise `cat titi` on observe que les modifications ont impactées le fichier titi. A la suppression de toto, titi reste intacte. On appelle ça un <b>soft link</b>.
 
 #### 12. Créez à présent un lien symbolique tutu sur titi avec la commande ln -s titi tutu. Modifiez le contenu de titi ; quelle conséquence pour tutu ? Et inversement ? Supprimez le fichier titi ; quelle conséquence cela a-t-il sur tutu ?
 
-La modification de titi impacte tutu et inversement. 
+La modification de titi impacte tutu et inversement. Tutu devient alors rouge. Tutu ne peut plus pointer vers titi, le fichier est inutilisable, considéré comme supprimé. On appelle cela un <b>hard link</b>.
+
+#### 13. Affichez à l’écran le fichier /var/log/syslog. Quels raccourcis clavier permettent d’interrompre et reprendre le défilement à l’écran ?
+
+<b>CTRL + S</b> interrompt le défilement et <b>CTRL + Q</b> reprend le défilement
+
+#### 14. Affichez les 5 premières lignes du fichier /var/log/syslog, puis les 15 dernières, puis seulement les lignes 10 à 20.
+
+La commande `head -5 /var/log/syslog` permet d'afficher les 5 premières lignes. <br>
+`tail -15 /var/log/syslog` permet d'afficher les 15 dernières. <br>
+Et` head -20 /var/log/syslog | tail -n +10` pour les lignes 10 à 20 lignes. 
+
+#### 15. Que fait la commande dmesg | less ?
+
+Elle permet de réduire la taille d'un message en offrant la possibilité de le dérouler.
+
