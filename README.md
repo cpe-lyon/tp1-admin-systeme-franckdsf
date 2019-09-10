@@ -214,6 +214,9 @@ accessibles via Alt + FX_
 ## Découverte de l’éditeur de texte nano
 ---
 
+<br>
+<br>
+
 | Commande         	| Action                                                                             	|
 |------------------	|------------------------------------------------------------------------------------	|
 | F1F1 ou Ctrl + G 	| Affichage de l'aide                                                                	|
@@ -260,3 +263,36 @@ M-U (Alt + U)
 Ctrl+S
 
 
+## Personnalisation du shell
+---
+
+pour ajouter de la couleur il faut modifier le fichier ~/.bashrc et décommenter la ligne : `force_color_prompt=yes`
+
+Les couleurs par défauts (surtout celle du dossier courant) ne sont pas très visibles. Dans .bashrc,
+cherchez les lignes commençant par <b>PS1=</b>; elles indiquent la mise en forme de l’invite de commande
+(selon que l’on est en couleurs ou non).
+Sur cette ligne, on peut distinguer un certain nombre de raccourcis :
+
+| Text 	| Description                       	|
+|------	|-----------------------------------	|
+| \u   	| Nom de l’utilisateur              	|
+| \h   	| Nom de la machine (hôte)          	|
+| \d   	| Date                              	|
+| \t   	| Heure avec les secondes           	|
+| \A   	| Heure sans les secondes           	|
+| \w   	| Chemin complet du dossier courant 	|
+
+Remarquez la séquence particulière : `\[\033[1;32m]\u@\h\[\033[00m\] ` <br>
+C’est cette instruction qui indique d’affiche le nom de l’utilisateur et de la machine en vert clair. Plus précisément :<br>
+• un code couleur se place entre \[\033[ et \]<br>
+• on peut remplacer \033 par \e (ce n’est pas forcément toujours plus lisible…)<br>
+• un code couleur se termine toujours par la lettre m<br>
+• le code couleur 00 efface toute mise en forme<br>
+• on peut combiner différents attributs (couleur, souligné, clignotant, etc.) en les séparant par des
+points virgules.
+
+La page suivante vous donne les différents codes couleurs possibles : https://misc.flogisoft.com/bash/tip_colors_and_formatting
+
+
+Réponse :
+`\[\033[95m\]\A - \[\033[92m\]\u@\h\[\033[00m\]:\[\033[36m\]\w\[\033[00m\]\$`
