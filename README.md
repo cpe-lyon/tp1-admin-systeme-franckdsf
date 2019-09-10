@@ -214,9 +214,6 @@ accessibles via Alt + FX_
 ## Découverte de l’éditeur de texte nano
 ---
 
-<br>
-<br>
-
 | Commande         	| Action                                                                             	|
 |------------------	|------------------------------------------------------------------------------------	|
 | F1F1 ou Ctrl + G 	| Affichage de l'aide                                                                	|
